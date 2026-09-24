@@ -62,12 +62,12 @@ tests:
         - enpt.execution
       pip_check: true
       python_version:
-        - >=${{ python_min }}
+        - ${{ python_min }}
         - "*"
   - requirements:
       run:
         - pip
-        - python >=${{ python_min }}
+        - python ${{ python_min }}
     script:
       - enpt --help
 
